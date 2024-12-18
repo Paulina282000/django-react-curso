@@ -6,9 +6,8 @@ from pathlib import Path
 import os
 import environ
 
-
-
-env = environ.Env() 
+# Cargar variables de entorno desde el archivo .env
+env = environ.Env()
 environ.Env.read_env()
  
 
@@ -168,15 +167,16 @@ REST_FRAMEWORK = {
     
 }
 
-CORS_ORIGING_WHITELIST = env.list('CORS_ORIGING_WHITELIST_DEV') 
-CSRF_TRUSTED_ORIGINGS = env.list('CSRF_TRUSTED_ORIGINGS_DEV') 
+CORS_ORIGIN_WHITELIST = env.list('CORS_ORIGIN_WHITELIST_DEV')
+
+CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS_DEV')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend' 
 
 if not DEBUG:
     ALLOWED_HOSTS = env.list('ALLOWED_HOSTS_DEPLOY') 
-    CORS_ORIGING_WHITELIST = env.list('CORS_ORIGING_WHITELIST_DEPLOY') 
-    CSRF_TRUSTED_ORIGINGS = env.list('CSRF_TRUSTED_ORIGINGS_DEPLOY') 
+    CORS_ORIGIN_WHITELIST = env.list('CORS_ORIGIN_WHITELIST_DEPLOY')
+    CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS_DEPLOY')
     
     DATABASES = {
     'default':env.db("DATABASE_URL"),
