@@ -5,7 +5,6 @@ const navigation = {
   solutions: [
     { name: 'Consultoría Legal', href: '#' },
     { name: 'Asesoría', href: '#' },
-    
   ],
   support: [
     { name: 'Contacto', href: '/contacto' },
@@ -17,15 +16,10 @@ const navigation = {
     { name: 'Carreras', href: '/carreras' },
     { name: 'Blog', href: '/blog' },
   ],
-  legal: [
-    { name: 'Claim', href: '#' },
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-  ],
   social: [
     {
       name: 'Facebook',
-      href: 'https://www.facebook.com/tuPagina', // Coloca aquí el enlace real
+      href: 'https://www.facebook.com/tuPagina',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -38,7 +32,7 @@ const navigation = {
     },
     {
       name: 'Instagram',
-      href: 'https://www.instagram.com/abogado.consulta.cordoba/', // Coloca aquí el enlace real
+      href: 'https://www.instagram.com/abogado.consulta.cordoba/',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -51,7 +45,7 @@ const navigation = {
     },
     {
       name: 'Ubicación',
-      href: 'https://www.google.com.ar/maps/place/25+de+Mayo+125,+X5019EHC+C%C3%B3rdoba/@-31.4152612,-64.1845231,17z/data=!3m1!4b1!4m6!3m5!1s0x9432a29cc2b84b8b:0x68f0ef91805b31e9!8m2!3d-31.4152658!4d-64.1819482!16s%2Fg%2F11dz57b12b?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D', // Coloca aquí el enlace real
+      href: 'https://www.google.com.ar/maps/place/25+de+Mayo+125,+X5019EHC+C%C3%B3rdoba/@-31.4152612,-64.1845231,17z/data=!3m1!4b1!4m6!3m5!1s0x9432a29cc2b84b8b:0x68f0ef91805b31e9!8m2!3d-31.4152658!4d-64.1819482!16s%2Fg%2F11dz57b12b?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z" />
@@ -60,102 +54,37 @@ const navigation = {
     },
     {
       name: 'WhatsApp',
-      href: 'https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5493515924478%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAabmWLhtn3UhEc0NSRbdKJ63B6VEAcV078h_ZZVm10c4HGeAYkzkjq5_SFI_aem_0o3HBlwUHrc1riAxEv00og&e=AT0b_TYcBrtJp4Z3dVc9UvEo5jLKLkNskGhh0AYETCqg_mkroAbxDXGKd-w3Uj21JeHrFPECLKVKuyggvsUml1kd07avHS4MKgV-UQ', // Coloca aquí el número de teléfono real
+      href: 'https://wa.me/5493515924478',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-      <path
-        fillRule="evenodd"
-        d="M12 2a10 10 0 00-10 10c0 1.672.472 3.25 1.276 4.58L1 22l5.445-2.276A9.967 9.967 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm.548 14.304c-.417.266-.88.42-1.376.42-1.552 0-3.008-1.493-3.826-2.938-.137-.204-.02-.441.258-.502l1.541-.442c.269-.08.55.046.642.31.444 1.222 1.548 2.253 2.614 2.253.343 0 .662-.183.844-.494.181-.311.237-.683.172-1.04-.159-.625-.577-1.146-1.095-1.378-.328-.154-.656-.326-.965-.497-.258-.127-.537-.268-.787-.406-.357-.231-.624-.494-.72-.827-.094-.335-.017-.694.23-.931.156-.174.38-.229.596-.214 1.19.079 2.255.607 2.972 1.498.337.448.504.996.508 1.56-.006 1.296-.742 2.474-1.898 3.026z"
-        clipRule="evenodd"
-      />
-    </svg>
-  ),
+          <path
+            fillRule="evenodd"
+            d="M12 2a10 10 0 00-10 10c0 1.672.472 3.25 1.276 4.58L1 22l5.445-2.276A9.967 9.967 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm.548 14.304c-.417.266-.88.42-1.376.42-1.552 0-3.008-1.493-3.826-2.938-.137-.204-.02-.441.258-.502l1.541-.442c.269-.08.484.095.61.285 1.291 2.207 3.396 2.042 3.672 2.009 1.35-.064 2.176-.822 2.276-2.056.074-.694-.067-1.25-.37-1.753-.125-.178-.298-.352-.527-.48-.497-.372-1.051-.627-1.52-.925-.143-.077-.303-.138-.47-.211-.247-.116-.489-.233-.721-.342-.287-.118-.602-.21-.932-.257-.47-.064-.953-.027-1.406.082-.451.108-.827.368-1.078.694-.285.438-.278.948.008 1.414 1.521 2.648 3.543 3.33 4.465 3.109 2.006-.26 3.253-2.04 3.348-4.155-.029-.14-.09-.279-.166-.426-.075-.145-.151-.303-.237-.46-.496-.786-.884-1.602-1.246-2.465-.084-.14-.195-.283-.31-.415-.107-.117-.222-.236-.353-.344-.162-.156-.334-.303-.513-.441z"
+            clipRule="evenodd"
+          />
+        </svg>
+      ),
     },
   ],
 };
 
 function Footer() {
   return (
-    <footer className="bg-bg-gray-50" aria-labelledby="footer-heading">
-      <h2 id="footer-heading" className="sr-only">
-        Footer
-      </h2>
-      <div className="mx-auto max-w-full py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-8 xl:col-span-1">
-            <img
-              src={logo_delfi}
-              width={130}
-              height={120}
-              alt="Logo Delfi"
-              className=""
-            />
-            <p className="text-lg text-gray-800 font-light">
-             
-            </p>
-            <div className="flex space-x-6">
-              {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div>
-          </div>
-          <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-12">
-              <div className="space-y-4">
-                <h3 className="text-base font-medium text-gray-900">Soluciones</h3>
-                <ul role="list" className="space-y-4">
-                  {navigation.solutions.map((item) => (
-                    <li key={item.name} className="text-base text-gray-500 hover:text-gray-900">
-                      <a href={item.href}>{item.name}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-base font-medium text-gray-900">Soporte</h3>
-                <ul role="list" className="space-y-4">
-                  {navigation.support.map((item) => (
-                    <li key={item.name} className="text-base text-gray-500 hover:text-gray-900">
-                      <a href={item.href}>{item.name}</a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-base font-medium text-gray-900">Compañía</h3>
-              <ul role="list" className="space-y-4">
-                {navigation.company.map((item) => (
-                  <li key={item.name} className="text-base text-gray-500 hover:text-gray-900">
-                    <a href={item.href}>{item.name}</a>
+    <footer className="bg-gray-50 py-12 lg:py-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-2 gap-12 md:grid-cols-4 lg:grid-cols-6">
+          {Object.keys(navigation).map((section) => (
+            <div key={section} className="space-y-4">
+              <h3 className="text-sm font-semibold text-gray-500">{section.charAt(0).toUpperCase() + section.slice(1)}</h3>
+              <ul className="space-y-2">
+                {navigation[section].map((item) => (
+                  <li key={item.name} className="text-base text-gray-500">
+                    <a href={item.href} className="hover:text-gray-900">{item.name}</a>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="space-y-4">
-              <h3 className="text-base font-medium text-gray-900">Legal</h3>
-              <ul role="list" className="space-y-4">
-                {navigation.legal.map((item) => (
-                  <li key={item.name} className="text-base text-gray-500 hover:text-gray-900">
-                    <a href={item.href}>{item.name}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Nueva sección añadida */}
-      <div className="mt-12 border-t border-gray-200 pt-8">
-        <p className="text-base text-gray-400 xl:text-center">&copy; 2025 Cúneo - Tirante, Abogados. </p>
-        
-        {/* Nueva información debajo */}
-        <div className="mt-4 text-base text-gray-400 xl:text-center">
-          
+          ))}
         </div>
       </div>
     </footer>
@@ -163,3 +92,4 @@ function Footer() {
 }
 
 export default connect()(Footer);
+

@@ -11,6 +11,9 @@ module.exports = {
         "background_main": '#F7F7F7', // Gris claro para fondos generales
         "text_secondary": '#777777', // Gris medio para textos secundarios
       },
+      boxShadow: { 
+        navbar: '0px 10px 8px 0px rgba(3, 3, 4, 0.03),0 1px 2px -1px rgba(3,3,4,0.03)', // Sombra para la barra de navegación
+      }
     },
   },
   plugins: [
@@ -26,6 +29,7 @@ module.exports = {
     },
   ],
 };
+
 
 
 

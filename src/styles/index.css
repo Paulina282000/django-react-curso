@@ -5,3 +5,21 @@
 .active {
   @apply border-blue-500 text-button_hireUs_bg;
 }
+::-webkit-scrollbar {
+  width: 10px;
+  z-index: -1;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8d8d8;
+  border-radius: 10px;
+  opacity: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c9c9c9;
+  opacity: 10px;
+  border-radius: 10px;
+}
