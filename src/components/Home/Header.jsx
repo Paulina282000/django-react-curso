@@ -20,7 +20,7 @@ function Header() {
               </div>
             </div>
             <div>
-              <h1 className="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl text-[#003366]">
+              <h1 className="text-4xl font-bold tracking-tight pb-12 sm:text-center sm:text-7xl text-[#003366]">
                 <Typewriter
                   words={['Asesoría Legal de Confianza']}
                   loop={1}
@@ -34,7 +34,7 @@ function Header() {
               </p>
               <div className="mt-8 flex gap-x-4 sm:justify-center">
                 <a
-                  href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F5493515924478%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAabRoW9j6gcnliTRWj4KZsJrmXYBqmiv--7ANJx2PysRJEVlAr3arADnngg_aem_TjzI020mJl4JZtT76U6MuA&e=AT3zjhAqBe1s3KPvQl0XqmvLaIyyjmr0SKXrx7CiaaTz6TJFaIFwYBbx5GNjUpvK6KF4WpW7pFkfcNGJinGBUQDZqb52HgoxqH-1Nw"
+                  href="https://api.whatsapp.com/send/?phone=5493515924478&text&type=phone_number&app_absent=0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center rounded-lg bg-[#003366] px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-[#003366] hover:bg-[#005bb5] hover:ring-[#005bb5]"

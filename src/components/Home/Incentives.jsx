@@ -1,5 +1,6 @@
 import lesion from "assets/img/lesion.png"
 import juvi from "assets/img/juvilaciones.png"
+import hospi from "assets/img/hospital.png"
 
 const incentives = [
   {
@@ -9,12 +10,12 @@ const incentives = [
   },
   {
     name: 'Amparos Obras Sociales',
-    imageSrc: 'https://tailwindui.com/img/ecommerce/icons/icon-warranty-simple.svg',
+    imageSrc:hospi,
     description: "Si tu obra social se niega a darte cobertura a un tratamiento o medicamento asesórate con un especialista para hacer valer tus derechos.",
   },
   {
-    name: 'Inicio Juvilaciones',
-    imageSrc: juvi, // Usando la imagen "juvilaciones.png"
+    name: 'Inicio Jubilaciones',
+    imageSrc: juvi, // Usando la imagen "juilaciones.png"
     description:
       "Somos un estudio jurídico especializado en jubilaciones y te ofrecemos acompañarte y asesorarte para obtener la mejor jubilación posible para tu caso, en el menor tiempo posible.",
   },
